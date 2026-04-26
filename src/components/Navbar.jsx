@@ -9,7 +9,9 @@ import {
   ShoppingBag, 
   Calendar, 
   Search,
-  ArrowRight
+  ArrowRight,
+  UserCog ,
+  Hotel 
 } from 'lucide-react';
 
 import { Link } from "react-router-dom";
@@ -28,6 +30,9 @@ const NAV_LINKS = [
     href: '#', 
     dropdown: [
       { name: 'Workshops', href: '/workshops', icon: <Calendar size={16} />, desc: 'Sustainable design training' },
+      { name: 'Consultation', href: '/consultation', icon: <UserCog size={16} />, desc: 'discussion between people before a decision is taken' },
+      { name: 'Hospitality', href: '/hospitality', icon: <Hotel size={16} />, desc: 'looking after guests and being friendly' },
+
       { name: 'Shop', href: '/shop', icon: <ShoppingBag size={16} />, desc: 'Curated architectural products' }
     ] 
   },
