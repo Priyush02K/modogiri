@@ -3,6 +3,7 @@ import { ArrowUpRight, ArrowRight, Instagram, Linkedin, Twitter } from 'lucide-r
 
 const Footer = () => {
   return (
+    
     <footer className="bg-[#FFFAF5] dark:bg-[#0a0a0a] pt-24 md:pt-40 pb-12 px-6 md:px-12 border-t border-black/5 dark:border-white/5 transition-colors duration-500 overflow-hidden">
       <div className="max-w-[1400px] mx-auto">
         
@@ -113,6 +114,8 @@ const Footer = () => {
 
       </div>
     </footer>
+    
+   
   );
 };
 

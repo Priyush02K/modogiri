@@ -21,6 +21,8 @@ import {
   BookOpen
 } from 'lucide-react';
 
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 // ==========================================
 // 1. DATA CONFIGURATION (ARCHIVES)
 // ==========================================
@@ -132,6 +134,7 @@ const Workshops = () => {
   };
 
   return (
+    
     <div className="bg-[#F5F2ED] dark:bg-[#0a0a0a] transition-colors duration-700 font-sans text-stone-900 dark:text-stone-100 min-h-screen overflow-hidden selection:bg-orange-600 selection:text-white pt-24">
       
       {/* --- SECTION 1: CINEMATIC COVER HERO --- */}
@@ -343,6 +346,8 @@ function ArchiveCard({ pws }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
+
+    
     <div className="min-w-[85vw] md:min-w-[500px] snap-center">
       <div className="bg-white dark:bg-[#111] rounded-[4rem] overflow-hidden border border-stone-200 dark:border-white/5 flex flex-col h-full shadow-lg group">
         <div className="aspect-[16/10] relative overflow-hidden">
@@ -371,10 +376,16 @@ function ArchiveCard({ pws }) {
             </button>
           </div>
         </div>
+
+
+
       </div>
     </div>
+        
+   
 
   );
+  
 }
 
 export default Workshops;
