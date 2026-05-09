@@ -99,7 +99,7 @@ const Navbar = () => {
             <span className="text-white -rotate-45 font-bold text-sm group-hover:rotate-[-135deg] transition-transform duration-500">M</span>
           </div>
           <h1 className="text-xl md:text-2xl font-serif tracking-tighter uppercase font-bold text-black dark:text-white transition-colors">
-            Studio<span className="text-orange-600 italic">.</span>Arc
+            STUDIOMADOGIRI
           </h1>
         </div>
 

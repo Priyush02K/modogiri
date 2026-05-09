@@ -6,13 +6,13 @@ import VideoSection from "../components/VideoSection";
 import Process from '../components/Process';
 import Testimonials from '../components/Testimonials';
 import Partners from '../components/Partners';
-
+import GridPort from '../components/GridPort'
 const Homepage = () => {
   return (
     <>
       <Hero/>
       <Process/>
-      <Portfolio/>
+      <GridPort/>
       <VideoSection/>
       <Testimonials/>
       <Partners/>
