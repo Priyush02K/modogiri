@@ -5,16 +5,23 @@ import {
   ArrowUpRight
 } from 'lucide-react';
 
+// workshop
+import Plasters  from "../assets/NaturalPlastersWorkshop.webp"
+import Sensory  from "../assets/SensoryWorkshop.webp"
+
+// shop
+import Gourmetchocolatebox  from "../assets/Gourmetchocolatebox.webp";
+import Rendered from "../assets/Rendered.webp";
+
+
+//culture 
+import Mud from "../assets/Mud.webp";
+
+
+
+
 const PROJECTS_DATA = [
-  {
-    id: 'ARC-01',
-    title: 'Boutique Cottage',
-    category: 'Residential',
-    location: 'Farmstay Context',
-    image: 'https://images.unsplash.com/photo-1518481612222-68bab828fd1b?q=80&w=2070',
-    shortDesc: 'Wattle and Daub cottage with site-sourced bamboo and mud.',
-    aspect: 'aspect-[4/5]'
-  },
+
   {
     id: 'ARC-02',
     title: 'The Mud Tub',
@@ -24,15 +31,7 @@ const PROJECTS_DATA = [
     shortDesc: 'A sculpted earthen bathtub balancing refined taste and organic expression.',
     aspect: 'aspect-square'
   },
-  {
-    id: 'ARC-03',
-    title: 'Building with Earthbags',
-    category: 'Research',
-    location: 'Remote Mountains',
-    image: 'https://images.unsplash.com/photo-1434725039720-aaad6dd32faa?q=80&w=2067',
-    shortDesc: 'Strong, flexible structures using polypropylene bags filled with soil.',
-    aspect: 'aspect-[3/4]'
-  },
+
   {
     id: 'ARC-04',
     title: 'Public Bottle Toilet',
@@ -59,7 +58,54 @@ const PROJECTS_DATA = [
     image: 'https://images.unsplash.com/photo-1510627489930-0c1b0bfb6785?q=80&w=2070',
     shortDesc: 'Coastal aesthetics adapted to Himalayan terrain.',
     aspect: 'aspect-[4/5]'
+  },
+    {id: 'ARC-7',
+    title: 'Natural Plasters Workshop',
+    category: 'Workshops',
+    location: 'June 2025,',
+    image: Plasters,
+    shortDesc: 'This workshop explored the timeless practice of natural plastering—used for centuries to protect and enhance traditional buildings.',
+    aspect: 'aspect-[4/5]'
   }
+
+  ,
+    {id: 'ARC-8',
+    title: 'Sensory',
+    category: 'Workshops',
+    location: 'Tehri Garhwal,',
+    image: Sensory,
+    shortDesc: 'This workshop engaged 60 children from 17 villages through music, storytelling, and zine-making.',
+    aspect: 'aspect-[4/5]'
+  }
+  ,
+    {id: 'ARC-9',
+    title: 'Gourmet Chocolate Box',
+    category: 'Products',
+    location: 'Studio,',
+    image: Gourmetchocolatebox,
+    shortDesc: 'This project proposes a limited edition packaging design that reimagines the commercial aesthetic of Halloween.',
+    aspect: 'aspect-[4/5]'
+  }
+  ,
+      {id: 'ARC-10',
+    title: 'Poki the Robo',
+    category: 'Products',
+    location: 'Studio,',
+    image: Rendered,
+    shortDesc: 'Say hello to Poki the Robo—the friend you build, break, and build again! Designed for curious minds aged 8 to 15 (but fun for everyone), Poki is more than just a robot; he is a canvas for your imagination.',
+    aspect: 'aspect-[4/5]'
+  }
+
+    ,
+      {id: 'ARC-11',
+    title: 'Mud and Music is a festival',
+    category: 'Cultural',
+    location: 'Uttarakhand,',
+    image: Mud,
+    shortDesc: 'A festival celebrating the traditional music, culture, and architecture of Uttarakhand.',
+    aspect: 'aspect-[4/5]'
+  }
+
 ];
 
 const CATEGORIES = ['All', 'Residential', 'Commercial', 'Cultural', 'Products', 'Workshops'];

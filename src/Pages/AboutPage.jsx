@@ -1,254 +1,367 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
+  Globe, 
+  PenTool, 
   Leaf, 
-  PenTool,
-  ArrowUpRight,
-  Globe,
-  Users,
-  Camera,
-  Quote,
-  Trophy,
-  Activity,
-  Zap,
-  Layers
+  Camera, 
+  Users, 
+  ArrowUpRight, 
+  Compass, 
+  MapPin, 
+  Award, 
+  Check, 
+  Sparkles,
+  Building2,
+  ShoppingBag,
+  GraduationCap,
+  Layers,
+  HeartHandshake
 } from 'lucide-react';
-import Footer from '../components/Footer';
 
-// ==========================================
-// 1. BRAND DATA CONFIGURATION
-// ==========================================
 
-const PHILOSOPHY_PILLARS = [
+
+
+
+const WHAT_WE_OFFER = [
   {
-    title: 'The Ancestral Link',
-    desc: 'Our designs are inspired by the timelessness of ancient Indian stepwells and caves—spaces that breathe naturally and age with dignity.',
-    icon: <Globe size={24} className="text-orange-600" />
+    title: 'Architectural Design',
+    desc: 'We design and create hybrid structures—from tiny homes and boutique spaces to functional additions—that integrate seamlessly into any landscape.',
+    icon: <Building2 size={26} className="text-orange-600" />,
+    tag: 'Design & Build'
   },
   {
-    title: 'Honest Brutalism',
-    desc: 'We believe in the raw beauty of materials. Concrete, earth, and wood are left exposed to tell the story of their own creation.',
-    icon: <PenTool size={24} className="text-orange-600" />
+    title: 'Curated Products',
+    desc: 'Our line of products is crafted to blend beautifully within these earthen spaces. Each piece is designed to complement our architectural philosophy, bringing function and aesthetic harmony to your environment.',
+    icon: <ShoppingBag size={26} className="text-orange-600" />,
+    tag: 'Craft & Form'
   },
   {
-    title: 'Eco-Systemic Flow',
-    desc: 'Architecture should not disrupt the horizon. We focus on zero-carbon footprints through rammed earth and solar-passive orientation.',
-    icon: <Leaf size={24} className="text-orange-600" />
+    title: 'Hands-On Workshops & Tours',
+    desc: 'We believe in sharing our knowledge. Throughout the year, we host hands-on workshops and educational tours that are open to all age groups. Join us to learn about our techniques, explore our materials, and get inspired to create something of your own.',
+    icon: <GraduationCap size={26} className="text-orange-600" />,
+    tag: 'Education & Community'
   }
-];
-
-const AWARDS = [
-  { year: '2025', title: 'Sustainable Studio of the Year', body: 'AD Design Awards' },
-  { year: '2024', title: 'Gold Medal for Innovation', body: 'Indian Institute of Architects' },
-  { year: '2023', title: 'Top 50 Emerging Practices', body: 'Dezeen International' },
-  { year: '2022', title: 'Excellence in Earth Building', body: 'Auroville Earth Institute' },
-];
-
-const INNOVATION_METRICS = [
-  { label: 'Carbon Reduction', value: '65%', icon: <Leaf size={20} /> },
-  { label: 'Local Materials', value: '90%', icon: <Layers size={20} /> },
-  { label: 'Natural Lighting', value: '100%', icon: <Zap size={20} /> },
 ];
 
 const STUDIO_GALLERY = [
   { 
     url: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2070', 
-    label: 'The Workshop',
-    span: 'md:col-span-2 md:row-span-2' 
+    label: 'The Fabrication Workshop',
+    span: 'md:col-span-2 md:row-span-2'
   },
   { 
     url: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071', 
-    label: 'Material Testing',
+    label: 'Soil & Lime Testing',
     span: 'md:col-span-1 md:row-span-1'
   },
   { 
     url: 'https://images.unsplash.com/photo-1581291417004-6e7398463c68?q=80&w=2070', 
-    label: 'Drafting Room',
-    span: 'md:col-span-1 md:row-span-2' 
+    label: 'Drafting Studio',
+    span: 'md:col-span-1 md:row-span-2'
   },
   { 
     url: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1974', 
-    label: 'Principal at Work',
+    label: 'Principal Desk',
     span: 'md:col-span-1 md:row-span-1'
   }
 ];
 
 const TEAM = [
   {
-    name: 'Ar. Vikram Sharma',
-    role: 'Principal Architect',
+    name: 'Ar. ABC XYZ',
+    role: 'Principal Architect & Founder',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&fit=crop'
   },
   {
     name: 'Elena Rostova',
-    role: 'Lead Designer',
+    role: 'Head of Interior Research',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&fit=crop'
   },
   {
     name: 'Marcus Chen',
-    role: 'Technical Lead',
+    role: 'Lead Structural Engineer',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&fit=crop'
   }
 ];
 
-// ==========================================
-// 2. MAIN ABOUT COMPONENT
-// ==========================================
+const STATS = [
+  { value: '15+', label: 'Years of Practice' },
+  { value: '42k', label: 'Built Footprint (sqft)' },
+  { value: '180+', label: 'Material R&D Tests' },
+  { value: 'Net-0', label: 'Carbon Commitment' }
+];
 
-const AboutPage = () => {
+export function AboutPage() {
   return (
-       <>
-    <div className="bg-[#F5F2ED] dark:bg-[#0a0a0a] transition-colors duration-500 font-sans text-stone-900 dark:text-stone-100 selection:bg-orange-600 selection:text-white min-h-screen overflow-hidden">
+    <div className="bg-[#FAF9F6] dark:bg-[#0a0a0a] transition-colors duration-500 font-sans text-stone-900 dark:text-stone-100 selection:bg-orange-600 selection:text-white min-h-screen overflow-hidden">
       
-      {/* --- SECTION 1: COVER HERO --- */}
-      <header className="relative h-[95vh] min-h-[750px] flex items-end pb-24 overflow-hidden bg-zinc-900">
+      {/* --- HERO SECTION --- */}
+      <header className="relative h-[90vh] min-h-[700px] flex items-end pb-24 overflow-hidden bg-stone-950">
         <div className="absolute inset-0 z-0">
           <motion.img 
-            initial={{ scale: 1.1 }}
+            initial={{ scale: 1.15 }}
             animate={{ scale: 1 }}
-            transition={{ duration: 15, ease: "linear" }}
-            src="https://images.unsplash.com/photo-1518481612222-68bab828fd1b?q=80&w=2070&auto=format&fit=crop" 
-            className="w-full h-full object-cover" 
-            alt="Studio Architectural Foundation"
+            transition={{ duration: 12, ease: "easeOut" }}
+            src="https://images.unsplash.com/photo-1518481612222-68bab828fd1b?q=80&w=2070" 
+            className="w-full h-full object-cover opacity-50 grayscale" 
+            alt="MADOGIRI Architectural Foundation"
           />
-          <div className="absolute inset-0 bg-stone-950/40 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent" />
         </div>
 
-        <div className="max-w-[1400px] mx-auto w-full px-6 md:px-12 relative z-10">
+        <div className="max-w-[1500px] mx-auto w-full px-6 md:px-12 relative z-10">
           <div className="grid lg:grid-cols-12 gap-12 items-end">
             <div className="lg:col-span-8">
               <motion.div
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 1 }}
               >
-                <div className="flex items-center gap-6 mb-8">
-                  <span className="w-16 h-[1px] bg-orange-600"></span>
-                  <p className="text-[10px] uppercase tracking-[0.5em] font-black text-white/80">The Mind Behind the Form</p>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-[2px] bg-orange-600"></span>
+                  <p className="text-[10px] uppercase tracking-[0.5em] font-black text-orange-500">Design Studio</p>
                 </div>
                 
-                <h1 className="text-[14vw] md:text-[8rem] lg:text-[10rem] font-serif leading-[0.8] tracking-tighter mb-12 text-white">
-                  Vikram <br/> 
-                  <span className="italic text-stone-400 font-light">Sharma</span>
+                <h1 className="text-6xl md:text-8xl lg:text-[9rem] font-serif leading-[0.85] tracking-tighter mb-8 text-white">
+                  MADO<span className="italic text-stone-400 font-light">GIRI.</span>
                 </h1>
                 
-                <p className="text-2xl md:text-4xl font-serif text-stone-300 leading-tight max-w-3xl italic">
+                <p className="text-2xl md:text-3xl font-serif text-stone-300 leading-tight max-w-2xl italic font-light">
                   "Architecture is the silent conversation between the earth's weight and the sky's light."
                 </p>
               </motion.div>
             </div>
             
             <div className="lg:col-span-4 flex flex-col items-start lg:items-end">
-               <motion.div 
-                 initial={{ opacity: 0 }}
-                 animate={{ opacity: 1 }}
-                 transition={{ delay: 0.8 }}
-                 className="text-right"
-               >
-                 <p className="text-[10px] uppercase tracking-widest font-bold text-stone-400 mb-2">Current Status</p>
-                 <p className="text-xl font-serif text-white border-b border-orange-600 pb-2">Principal Architect & Founder</p>
-               </motion.div>
+              <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6 }}
+                className="text-left lg:text-right border-l-2 lg:border-l-0 lg:border-r-2 border-orange-600 pl-4 lg:pl-0 lg:pr-4"
+              >
+                <p className="text-[10px] uppercase tracking-widest font-black text-stone-400 mb-1">Principal & Founder</p>
+                <p className="text-lg font-serif text-white">Ar. Vikram Sharma</p>
+                <p className="text-xs font-mono text-orange-500 mt-2">B.Arch // Vernacular Researcher</p>
+              </motion.div>
             </div>
           </div>
         </div>
       </header>
 
-      {/* --- SECTION 2: DESIGN PHILOSOPHY --- */}
-      <section className="py-32 px-6 md:px-12 bg-stone-50 dark:bg-[#0c0c0c] border-y border-stone-200 dark:border-stone-800 transition-colors duration-500">
-        <div className="max-w-[1400px] mx-auto">
-          <div className="grid lg:grid-cols-12 gap-24">
-            <div className="lg:col-span-5">
-              <h2 className="text-[11px] uppercase tracking-[0.4em] font-black text-orange-600 mb-8">Approach & Vision</h2>
-              <h3 className="text-4xl md:text-6xl font-serif mb-10 leading-tight text-stone-900 dark:text-stone-100">Sculpting with <br/><span className="italic text-stone-400 dark:text-stone-600">Intention.</span></h3>
-              <div className="space-y-6 text-lg text-stone-500 dark:text-stone-400 leading-relaxed">
-                <p>
-                  Our journey is rooted in the belief that a building should belong to its site. We draw inspiration from the structural honesty of <strong>Ancient Stepwells</strong> and the raw rhythm of <strong>Sustainable Brutalism</strong>.
-                </p>
-                <p>
-                  Every project is an experiment in innovation—merging thermal mass with natural light to create spaces that breathe.
+      {/* --- STATS BAR --- */}
+      <section className="bg-stone-900 text-stone-200 py-12 px-6 md:px-12 border-b border-stone-800">
+        <div className="max-w-[1500px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+          {STATS.map((stat, i) => (
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="flex flex-col gap-1 border-l border-stone-800 pl-6"
+            >
+              <span className="text-4xl md:text-5xl font-serif font-bold text-white tracking-tight">{stat.value}</span>
+              <span className="text-[10px] uppercase font-mono tracking-widest text-orange-500">{stat.label}</span>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* --- FOUNDER SECTION (COMPACT IMAGE SIZE) --- */}
+      <section className="py-24 px-6 md:px-12 max-w-[1500px] mx-auto border-b border-stone-200 dark:border-stone-800">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          
+          {/* Founder Image - Compact & Smaller Frame */}
+          <div className="lg:col-span-4 max-w-sm w-full mx-auto lg:mx-0 relative">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-stone-200 dark:border-stone-800 bg-stone-200 dark:bg-stone-900"
+            >
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&fit=crop" 
+                alt="Founder - Ar. Vikram Sharma" 
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <p className="text-[9px] uppercase tracking-[0.4em] font-black text-orange-500 mb-1">Founder's Journey</p>
+                <p className="text-xl font-serif">Ar. Vikram Sharma</p>
+                <p className="text-[11px] text-stone-300 font-mono">M.Des (Florence) // Natural Builder</p>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Founder Narrative Text */}
+          <div className="lg:col-span-8 flex flex-col justify-center">
+            <div className="flex items-center gap-3 mb-6">
+              <Sparkles size={16} className="text-orange-600" />
+              <span className="text-[10px] uppercase tracking-[0.4em] font-black text-orange-600">Our Story & Origin</span>
+            </div>
+            
+            <h2 className="text-3xl md:text-5xl font-serif mb-6 leading-tight">
+              Rediscovering built forms <br/>
+              <span className="italic text-stone-400 font-light">through earth & travel.</span>
+            </h2>
+
+            <div className="space-y-5 text-stone-600 dark:text-stone-300 text-base md:text-lg leading-relaxed">
+              <p>
+                Ever since I graduated as an architect I felt a little incomplete about the profession . I further went on for a masters degree in product design from Florence,Italy. It was only after my travels around rural India and Europe, when I started digging about earthen/vernacular architecture which gave me a detailed direction. I have been working/researching on creating ways to build more hybrid structures which can amalgamate the vernacular Knowledge and the modern discoveries of materials.
+              </p>
+              <p>
+                I participated in various workshops and internship programs to hone my hands-on skill in natural building.
+              </p>
+              <p>
+                I have built with various techniques of natural construction since the year 2020.
+              </p>
+              <p className="font-serif italic text-lg md:text-xl text-stone-900 dark:text-white border-l-2 border-orange-600 pl-6 my-4">
+                "We now with a team of natural builders aim to build beautiful hybrid earthen spaces that can enhance an overall experience ."
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {}
+      {/* --- WHO WE ARE --- */}
+      <section className="py-24 px-6 md:px-12 bg-stone-100/70 dark:bg-stone-900/40 border-b border-stone-200 dark:border-stone-800">
+        <div className="max-w-[1500px] mx-auto">
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+            <div className="lg:col-span-4">
+              <div className="flex items-center gap-3 mb-4">
+                <HeartHandshake size={18} className="text-orange-600" />
+                <span className="text-[10px] uppercase tracking-[0.4em] font-black text-orange-600">Identity & Purpose</span>
+              </div>
+              <h2 className="text-4xl md:text-6xl font-serif leading-tight">
+                Who We Are
+              </h2>
+            </div>
+            
+            <div className="lg:col-span-8 border-l-2 border-stone-300 dark:border-stone-800 pl-6 lg:pl-12">
+              <p className="text-xl md:text-2xl font-serif text-stone-800 dark:text-stone-200 leading-relaxed italic font-light">
+                <strong className="font-semibold not-italic text-stone-900 dark:text-white">MADOGIRI</strong> is a design studio with a dual focus: creating innovative products and thoughtful buildings. We believe that great design is a solution—a way to harmonize our needs with the natural world. Our work is a constant exploration of how we can live better, smarter, and more gently on the earth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {}
+      {/* --- OUR APPROACH: THE ART OF THE HYBRID STRUCTURE --- */}
+      <section className="py-28 px-6 md:px-12 max-w-[1500px] mx-auto border-b border-stone-200 dark:border-stone-800">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+          <div className="lg:col-span-5">
+            <div className="flex items-center gap-3 mb-4">
+              <Compass size={18} className="text-orange-600" />
+              <span className="text-[10px] uppercase tracking-[0.4em] font-black text-orange-600">Design Philosophy</span>
+            </div>
+            <h2 className="text-4xl md:text-6xl font-serif leading-tight mb-6">
+              Our Approach: <br/>
+              <span className="italic text-stone-400 font-light">The Art of the Hybrid Structure</span>
+            </h2>
+            <div className="w-16 h-[2px] bg-orange-600 mb-6"></div>
+          </div>
+
+          <div className="lg:col-span-7 bg-white dark:bg-stone-900 p-8 md:p-12 rounded-3xl border border-stone-200 dark:border-stone-800 shadow-sm">
+            <p className="text-xl md:text-2xl font-serif text-stone-900 dark:text-white mb-6 italic">
+              "How do we create spaces that fit anywhere and feel like everywhere? By marrying the best of both worlds."
+            </p>
+            <p className="text-stone-600 dark:text-stone-300 text-base md:text-lg leading-relaxed">
+              We specialize in designing hybrid structures that artfully blend natural, earthen materials with the strength and reliability of conventional ones. The result is a building that is sustainable, durable, and uniquely beautiful—perfectly adapted to its environment.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {}
+      {/* --- WHAT WE OFFER --- */}
+      <section className="py-28 px-6 md:px-12 max-w-[1500px] mx-auto">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <div className="flex items-center gap-3 mb-4">
+              <Layers size={18} className="text-orange-600" />
+              <span className="text-[10px] uppercase tracking-[0.4em] font-black text-orange-600">Capabilities & Scope</span>
+            </div>
+            <h2 className="text-4xl md:text-6xl font-serif">What We Offer</h2>
+          </div>
+          <p className="max-w-md text-stone-500 dark:text-stone-400 text-sm leading-relaxed">
+            Bridging architectural forms, product design, and hands-on community engagement.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {WHAT_WE_OFFER.map((offer, idx) => (
+            <motion.div 
+              key={idx}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.15 }}
+              className="flex flex-col justify-between p-8 md:p-10 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 hover:border-orange-600 dark:hover:border-orange-600 transition-all duration-300 shadow-sm group"
+            >
+              <div>
+                <div className="flex items-center justify-between mb-8">
+                  <div className="w-14 h-14 rounded-2xl bg-orange-100 dark:bg-orange-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    {offer.icon}
+                  </div>
+                  <span className="text-[9px] uppercase tracking-widest font-mono text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-500/10 px-3 py-1 rounded-full border border-orange-200 dark:border-orange-500/20">
+                    {offer.tag}
+                  </span>
+                </div>
+
+                <h3 className="text-2xl font-serif mb-4 text-stone-900 dark:text-stone-100 group-hover:text-orange-600 transition-colors">
+                  {offer.title}
+                </h3>
+
+                <p className="text-stone-600 dark:text-stone-400 text-sm md:text-base leading-relaxed">
+                  {offer.desc}
                 </p>
               </div>
-            </div>
 
-            <div className="lg:col-span-7 flex flex-col gap-12">
-              {PHILOSOPHY_PILLARS.map((pillar, idx) => (
-                <motion.div 
-                  key={idx}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1 }}
-                  className="flex gap-8 group"
-                >
-                  <div className="shrink-0 w-16 h-16 rounded-2xl bg-white dark:bg-white/5 border border-stone-100 dark:border-white/5 flex items-center justify-center group-hover:bg-orange-600 group-hover:text-white transition-all duration-500 shadow-sm">
-                    {pillar.icon}
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-serif mb-3 text-stone-900 dark:text-stone-100">{pillar.title}</h4>
-                    <p className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed max-w-lg">{pillar.desc}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
+              <div className="pt-8 mt-8 border-t border-stone-100 dark:border-stone-800/80 flex items-center gap-2 text-xs font-mono text-stone-400 group-hover:text-orange-600 transition-colors">
+                <span>Explore Offering</span>
+                <ArrowUpRight size={14} />
+              </div>
+            </motion.div>
+          ))}
         </div>
       </section>
 
-      {/* --- ADDITION: AWARDS & RECOGNITION --- */}
-      <section className="py-32 px-6 md:px-12 bg-transparent">
-        <div className="max-w-[1400px] mx-auto">
-          <div className="flex items-center gap-4 mb-16">
-            <Trophy size={18} className="text-orange-600" />
-            <h2 className="text-[11px] uppercase tracking-[0.4em] font-black text-stone-400 dark:text-stone-500">Recognition & Awards</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {AWARDS.map((award, i) => (
-              <motion.div 
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="group border-b border-stone-200 dark:border-stone-800 pb-8"
-              >
-                <p className="text-xs font-mono text-orange-600 mb-4">{award.year}</p>
-                <h3 className="text-xl font-serif mb-2 group-hover:text-orange-600 transition-colors">{award.title}</h3>
-                <p className="text-[10px] uppercase tracking-widest font-bold text-stone-400">{award.body}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* --- SECTION 3: ATMOSPHERE & CONTEXT (BENTO GRID) --- */}
-      <section className="py-32 px-6 md:px-12 bg-transparent transition-colors duration-500">
-        <div className="max-w-[1400px] mx-auto">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-            <div className="flex items-center gap-4">
-              <Camera size={18} className="text-orange-600" />
-              <h2 className="text-[11px] uppercase tracking-[0.4em] font-black text-stone-400 dark:text-stone-500">Atmosphere & Context</h2>
+      {}
+      {/* --- STUDIO ATMOSPHERE (BENTO GRID) --- */}
+      <section className="py-24 px-6 md:px-12 bg-stone-100 dark:bg-stone-900/30 border-y border-stone-200 dark:border-stone-800">
+        <div className="max-w-[1500px] mx-auto">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div>
+              <div className="flex items-center gap-3 mb-3">
+                <Camera size={16} className="text-orange-600" />
+                <span className="text-[10px] uppercase tracking-[0.4em] font-black text-stone-500">Behind the Scenes</span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-serif">Atmosphere & Context</h2>
             </div>
-            <p className="text-xl font-serif italic text-stone-400">Capturing the studio's daily pulse.</p>
+            <p className="text-base font-serif italic text-stone-500 dark:text-stone-400">Capturing our daily practice and tactile experiments.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[300px] md:auto-rows-[250px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[280px]">
             {STUDIO_GALLERY.map((img, i) => (
               <motion.div 
                 key={i}
-                whileHover={{ scale: 0.98 }}
-                className={`group relative rounded-3xl overflow-hidden shadow-xl bg-stone-200 dark:bg-zinc-900 border border-black/5 dark:border-white/5 ${img.span}`}
+                whileHover={{ scale: 0.99 }}
+                className={`group relative rounded-3xl overflow-hidden shadow-md bg-stone-200 dark:bg-zinc-900 border border-stone-200 dark:border-stone-800 ${img.span}`}
               >
                 <img 
                   src={img.url} 
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110" 
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
                   alt={img.label} 
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="absolute bottom-8 left-8 right-8 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                  <p className="text-[10px] uppercase tracking-[0.3em] font-black text-orange-500 mb-2">Studio View</p>
-                  <p className="text-xl font-serif text-white">{img.label}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-6 left-6 right-6 translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                  <p className="text-[9px] uppercase tracking-widest font-black text-orange-500 mb-1">Studio Archive</p>
+                  <p className="text-lg font-serif text-white">{img.label}</p>
                 </div>
               </motion.div>
             ))}
@@ -256,94 +369,62 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* --- ADDITION: INNOVATION & SUSTAINABILITY LAB --- */}
-      <section className="py-32 px-6 md:px-12">
-        <div className="max-w-[1400px] mx-auto bg-stone-100 dark:bg-stone-900/30 rounded-[3rem] p-12 md:p-24 border border-stone-200 dark:border-stone-800">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
-            <div>
-              <div className="flex items-center gap-4 mb-8">
-                <Activity size={18} className="text-orange-600" />
-                <h2 className="text-[11px] uppercase tracking-[0.4em] font-black text-stone-500">The Innovation Lab</h2>
-              </div>
-              <h3 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">Data-Driven <br/> <span className="italic">Sustainability.</span></h3>
-              <p className="text-stone-500 dark:text-stone-400 max-w-md leading-relaxed mb-12">
-                We utilize computational design tools to simulate sun-paths and airflow, ensuring every structure achieves maximum efficiency with zero reliance on mechanical cooling.
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-                {INNOVATION_METRICS.map((metric, idx) => (
-                  <div key={idx}>
-                    <div className="text-orange-600 mb-2">{metric.icon}</div>
-                    <p className="text-2xl font-serif text-stone-900 dark:text-stone-100">{metric.value}</p>
-                    <p className="text-[10px] uppercase tracking-widest font-bold text-stone-400">{metric.label}</p>
-                  </div>
-                ))}
-              </div>
+      {}
+      {/* --- THE COLLECTIVE / TEAM --- */}
+      <section className="py-28 px-6 md:px-12 max-w-[1500px] mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+          <div>
+            <div className="flex items-center gap-3 mb-4">
+              <Users size={16} className="text-orange-600" />
+              <span className="text-[10px] uppercase tracking-[0.4em] font-black text-orange-600">Our Practitioners</span>
             </div>
-            <div className="relative rounded-2xl overflow-hidden aspect-video shadow-2xl">
-               <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070" className="w-full h-full object-cover grayscale" alt="Innovation" />
-               <div className="absolute inset-0 bg-orange-600/10 mix-blend-overlay"></div>
-            </div>
+            <h2 className="text-4xl md:text-6xl font-serif">The Collective</h2>
           </div>
+          <p className="max-w-md text-stone-500 dark:text-stone-400 text-sm leading-relaxed">
+            Architects, researchers, and craftsmen working together to redefine sustainable, zero-carbon built environments.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-10">
+          {TEAM.map((member, idx) => (
+            <motion.div 
+              key={idx} 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.1 }}
+              className="group flex flex-col items-center text-center p-6 rounded-3xl bg-white/50 dark:bg-stone-900/50 border border-stone-200/60 dark:border-stone-800"
+            >
+              <div className="w-40 h-40 rounded-full overflow-hidden mb-6 border-2 border-stone-200 dark:border-stone-800 grayscale group-hover:grayscale-0 group-hover:border-orange-600 transition-all duration-500">
+                <img src={member.image} className="w-full h-full object-cover" alt={member.name} />
+              </div>
+              <h3 className="text-2xl font-serif text-stone-900 dark:text-white mb-1">{member.name}</h3>
+              <p className="text-[10px] uppercase tracking-widest font-black text-orange-600">{member.role}</p>
+            </motion.div>
+          ))}
         </div>
       </section>
 
-      {/* --- SECTION 4: THE TEAM --- */}
-      <section className="py-32 px-6 md:px-12 bg-stone-900 text-white rounded-[4rem] mx-4 md:mx-12 overflow-hidden relative shadow-2xl">
-        <div className="max-w-[1400px] mx-auto relative z-10">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
-            <div>
-              <div className="flex items-center gap-4 mb-6">
-                <Users size={16} className="text-orange-500" />
-                <h2 className="text-[11px] uppercase tracking-[0.4em] font-black text-orange-500">The Collective</h2>
-              </div>
-              <h3 className="text-5xl md:text-7xl font-serif leading-none tracking-tighter">United by <span className="italic text-stone-500">Craft.</span></h3>
-            </div>
-            <p className="max-w-xs text-stone-400 text-sm leading-relaxed border-l border-stone-800 pl-8">
-              A diverse group of architects and researchers working together to define the next era of Indian minimalist design.
-            </p>
+      {}
+      {/* --- FOOTER CTA --- */}
+      <footer className="py-24 px-6 md:px-12 bg-stone-950 text-white border-t border-stone-800">
+        <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+          <div>
+            <h2 className="text-3xl font-serif font-bold text-white tracking-tight">
+              MADOGIRI<span className="text-orange-600 italic">.</span>
+            </h2>
+            <p className="text-xs text-stone-400 mt-2">Architecture & Product Studio harmonizing human needs with the natural world.</p>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-16 md:gap-8">
-            {TEAM.map((member, idx) => (
-              <div key={idx} className="group">
-                <div className="aspect-square rounded-full overflow-hidden mb-8 border border-white/10 grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-95 shadow-inner">
-                  <img src={member.image} className="w-full h-full object-cover" alt={member.name} />
-                </div>
-                <div className="text-center">
-                  <h4 className="text-2xl font-serif mb-1">{member.name}</h4>
-                  <p className="text-[10px] uppercase tracking-widest font-black text-orange-500">{member.role}</p>
-                </div>
-              </div>
-            ))}
+          <div className="flex items-center gap-6 text-[10px] uppercase tracking-widest font-mono text-stone-500">
+            <span>© {new Date().getFullYear()} MADOGIRI Design Studio</span>
+            <span className="w-1 h-1 bg-orange-600 rounded-full"></span>
+            <span>All Rights Reserved</span>
           </div>
         </div>
-        <div className="absolute inset-0 opacity-5 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/concrete-wall.png')]"></div>
-      </section>
-
-      {/* --- SECTION 5: FINAL CALL TO ACTION --- */}
-      <section className="py-56 px-6 text-center bg-transparent transition-colors duration-500">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-7xl md:text-[10rem] font-serif mb-12 leading-[0.8] tracking-tighter text-stone-900 dark:text-white">What do <br/> you <span className="italic text-orange-600">Want?</span></h2>
-          <p className="text-xl text-stone-400 dark:text-stone-500 mb-16 max-w-xl mx-auto font-serif">Every great building starts with a desire for something better. Let's define yours.</p>
-          
-          <button className="group/btn bg-stone-900 dark:bg-white text-white dark:text-stone-900 px-16 py-8 rounded-full hover:scale-105 transition-all shadow-2xl inline-flex items-center gap-8">
-            <span className="text-sm uppercase tracking-[0.4em] font-black">Begin the Dialogue</span>
-            <div className="w-12 h-12 rounded-full bg-orange-600 flex items-center justify-center text-white group-hover/btn:translate-x-2 transition-transform">
-              <ArrowUpRight size={24} />
-            </div>
-          </button>
-        </motion.div>
-      </section>
+      </footer>
 
     </div>
-    <Footer/>
- </>
   );
-};
+}
 
-export default AboutPage
+export default AboutPage;

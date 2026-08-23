@@ -78,7 +78,7 @@ const Hospitality = () => {
             initial={{ scale: 1.15 }}
             animate={{ scale: 1 }}
             transition={{ duration: 25, ease: "linear" }}
-            src="https://images.unsplash.com/photo-1518481612222-68bab828fd1b?q=80&w=2070&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1544984243-ec57ea16fe25?q=80&w=2070&auto=format&fit=crop" 
             className="w-full h-full object-cover grayscale-[20%]" 
             alt="Himalayan Architecture"
           />
@@ -141,7 +141,7 @@ const Hospitality = () => {
                 className="relative aspect-[4/5] rounded-[4rem] overflow-hidden shadow-2xl group bg-stone-200"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1434725039720-aaad6dd32faa?q=80&w=2067&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e?q=80&w=2070&auto=format&fit=crop" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-[2s] scale-105 group-hover:scale-100" 
                   alt="Apples & Gulaab House" 
                 />

@@ -29,7 +29,7 @@ const NAV_LINKS = [
     name: 'Services', 
     href: '#', 
     dropdown: [
-      { name: 'Workshops', href: '/workshops', icon: <Calendar size={16} />, desc: 'Sustainable design training' },
+      { name: 'Skill-Studio', href: '/workshops', icon: <Calendar size={16} />, desc: 'Sustainable design training' },
       { name: 'Consultation', href: '/consultation', icon: <UserCog size={16} />, desc: 'discussion between people before a decision is taken' },
       { name: 'Hospitality', href: '/hospitality', icon: <Hotel size={16} />, desc: 'looking after guests and being friendly' },
 

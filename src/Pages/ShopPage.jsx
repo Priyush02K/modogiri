@@ -1,5 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Gourmetchocolatebox  from "../assets/Gourmetchocolatebox.webp";
+import Rendered from "../assets/Rendered.webp";
+
 import { 
   ArrowRight, 
   ArrowLeft, 
@@ -28,37 +31,37 @@ const WHATSAPP_NUMBER = "919876543210"; // Replace with your studio's WhatsApp n
 const PRODUCTS = [
   {
     id: 'JC-01',
-    name: 'The Obsidian Sconce',
+    name: 'Gourmet Chocolate Box',
     category: 'Lighting',
-    price: '$850',
+    price: '₹-xxx',
     status: 'available',
-    description: 'A hand-cast concrete lighting fixture designed to create rhythmic shadows against raw textures.',
-    longDesc: 'The Obsidian Sconce is an exercise in brutalist minimalism. Each piece is hand-cast in our Kochi studio using a proprietary blend of dark-pigmented concrete and volcanic sand. The internal LED is positioned to wash the wall in a soft gradient, emphasizing the surface texture of the architecture it inhabits.',
+    description: 'This project proposes a limited edition packaging design that reimagines the commercial aesthetic of Halloween. Moving away from traditional cartoonish tropes, this design seeks to bring a sense of sophistication, organic flow, and "dark romance" to the seasonal shelf.',
+    longDesc: 'Deeply inspired by the Art Nouveau movement, the design features signature “whiplash” curves, intricate floral motifs, and graceful, flowing lines. Organic forms mimic twisting vines and swirling mist, blending early 20th-century elegance with a mysterious and enchanting Halloween atmosphere',
     materials: ['Pigmented Concrete', 'Oxidized Brass', 'Integrated LED'],
     dimensions: '300mm x 150mm x 100mm',
     weight: '4.2 kg',
-    image: 'https://images.unsplash.com/photo-1532323544230-7191fd51bc1b?q=80&w=1974&auto=format&fit=crop',
+    image: Gourmetchocolatebox,
     featured: true
   },
   {
     id: 'JC-02',
-    name: 'Teak Lattice Credenza',
+    name: 'Poki the Robo',
     category: 'Furniture',
-    price: '$3,200',
+    price: '₹ xxx',
     status: 'available',
-    description: 'Reclaimed teak wood paired with a hand-carved Jali pattern for natural ventilation.',
-    longDesc: 'Inspired by traditional Indian Jali screens, this credenza allows air to flow through the storage compartment, making it ideal for tropical climates. The wood is sourced from FSC-certified reclaimed timber from the Western Ghats.',
+    description: 'Say hello to Poki the Robo—the friend you build, break, and build again! Designed for curious minds aged 8 to 15 (but fun for everyone), Poki is more than just a robot; he is a canvas for your imagination.',
+    longDesc: 'Poki arrives as a friendly, relatable companion, but the real magic begins when you start creating. Its modular parts can be detached, recombined, and transformed into anything from vehicles and creatures to futuristic machines. With a sleek, gender-neutral design, Poki inspires creativity, imagination, and STEM learning for builders of all backgrounds.',
     materials: ['Reclaimed Teak', 'Hand-turned Dowels', 'Wax Finish'],
     dimensions: '1800mm x 450mm x 750mm',
     weight: '62 kg',
-    image: 'https://images.unsplash.com/photo-1581291417004-6e7398463c68?q=80&w=2070&auto=format&fit=crop',
+    image: Rendered,
     featured: false
   },
   {
     id: 'JC-03',
     name: 'Brutalist Earth Basin',
     category: 'Hardware',
-    price: '$1,100',
+    price: '₹ 1,100',
     status: 'available',
     description: 'A monolithic bathroom basin carved from a single block of pink Rajasthan limestone.',
     longDesc: 'The Earth Basin celebrates the weight of stone. Carved with CNC precision and finished by hand, it features a sloped interior that minimizes splashing while maintaining a sharp, architectural silhouette.',

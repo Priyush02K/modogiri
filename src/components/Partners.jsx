@@ -28,23 +28,15 @@ const PARTNERS = [
     name: 'IIM Ahmedabad', 
     logo: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=400&fit=crop&q=80' 
   },
+
   { 
     id: 5,
-    name: 'HP PWD', 
-    logo: 'https://images.unsplash.com/photo-1572044162444-ad60f128bde2?w=400&h=400&fit=crop&q=80' 
-  },
-  { 
-    id: 6,
     name: 'IIT Delhi', 
     logo: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=400&fit=crop&q=80' 
   },
+
   { 
-    id: 7,
-    name: 'SPA Delhi', 
-    logo: 'https://images.unsplash.com/photo-1581291417004-6e7398463c68?w=400&h=400&fit=crop&q=80' 
-  },
-  { 
-    id: 8,
+    id: 6,
     name: 'ETH Zurich', 
     logo: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=400&fit=crop&q=80' 
   }

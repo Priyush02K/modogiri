@@ -88,7 +88,7 @@ const PREVIOUS_WORKSHOPS = [
       "A 2-day hands-on workshop exploring natural building through the construction of an open-air theatre.",
     details:
       "Held in May 2024 at Vaishnavi School of Architecture, Hyderabad, this workshop guided students in building an OAT using earth, cob, and repurposed cement bags. Emphasizing process over perfection, participants learned sustainable construction techniques while gaining confidence in creating functional, human-centered spaces with simple materials.",
-    image: "",
+    image: "https://cdn.prod.website-files.com/63763e28f5fadf06cd812964/64952cd8fede8ce97d01651f_Dissemination1.jpg",
   },
   {
     id: "PWS-06",
@@ -108,7 +108,7 @@ const PREVIOUS_WORKSHOPS = [
       "A hands-on workshop introducing students to fundamental natural building techniques and materials.",
     details:
       "Conducted in November 2023 with NASA India, this workshop covered dry stone masonry, earthbag construction, cob plastering, and lime plastering. Participants gained practical experience in building and finishing techniques, exploring sustainable methods rooted in traditional practices.",
-    image: "",
+    image: "https://images.squarespace-cdn.com/content/v1/59ed57a58c56a88ac98afc1e/9f30cc6f-b529-4cd8-a70f-5af7594394e6/IMG_1595.jpg",
   },
 ];
 
@@ -606,21 +606,11 @@ function ArchiveCard({ pws }) {
 
           
         </div>
-
-
-
       </div>
-      
-
+     
     </div>
 
- 
-
-    
-
- 
-
-    </>
+   </>
   );
 }
 
