@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, ArrowLeft, CalendarDays, ShoppingBag } from 'lucide-react';
-import Hero1  from "../assets/hero1.jpg";
-import Hero2  from "../assets/hero2.jpg";
-import Hero3  from "../assets/hero3.jpg";
-import Hero4  from "../assets/hero4.jpg";
+import Hero1  from "../assets/hero1.webp";
+import Hero2  from "../assets/hero2.webp";
+import Hero3  from "../assets/hero3.webp";
+import Hero4  from "../assets/hero4.webp";
 
 import Portfolio from './Portfolio';
 // --- Branding & Business Pillar Slider Data ---
@@ -13,7 +13,7 @@ const SLIDES = [
     id: '01',
     category: 'Philosophy',
     title: 'Rooted in Context',
-    subtitle: 'A branding-focused architecture practice merging brutalist forms with organic Indian materials.',
+    subtitle: 'Build small, give the planet space to breathe.',
     tag: 'Our Manifesto',
     actionText: 'Read Philosophy',
     icon: null,
@@ -23,7 +23,7 @@ const SLIDES = [
     id: '02',
     category: 'Portfolio',
     title: 'Auro Earth Center',
-    subtitle: 'Rammed earth and compressed stabilized blocks forming magnificent vaulted structures.',
+    subtitle: 'Crafted with traditional wattle, daub, and lime plaster , this boutique cottage radiates a rich, beautifully earthy warmth.',
     tag: 'Auroville, India',
     actionText: 'View Project',
     icon: null,
@@ -33,22 +33,22 @@ const SLIDES = [
     id: '03',
     category: 'Workshops',
     title: 'Earth Building 101',
-    subtitle: 'Join our immersive hands-on workshops. Learn sustainable masonry and bamboo crafting.',
+    subtitle: 'Join our immersive hand-on programs. Learn through the vernacular wisdom.',
     tag: 'Next: Oct 12 • 4 Seats Left', 
     actionText: 'Book Your Seat',
     icon: <CalendarDays size={14} className="mr-2" />,
     image: Hero3
   },
-  {
-    id: '04',
-    category: 'Shop',
-    title: 'The Jali Collection',
-    subtitle: 'Curated architectural products, lighting, and bespoke furniture designed by our studio.',
-    tag: 'New Arrivals • In Stock', 
-    actionText: 'Shop Collection',
-    icon: <ShoppingBag size={14} className="mr-2" />,
-    image: Hero4
-  }
+      {
+      id: '04',
+      category: 'Shop',
+      title: 'The Jali Collection',
+      subtitle: 'From sculpted wall closets to artisan home decor, stumble upon our community-crafted collections currently brewing.',
+      tag: 'New Arrivals • In Stock',
+      actionText: 'Shop Collection',
+      icon: <ShoppingBag size={14} className="mr-2" />,
+      image: Hero4
+      }
 ];
 
 const Hero = () => {

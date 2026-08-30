@@ -19,11 +19,19 @@ const STUDIO_VIDEOS = [
     title: ' Mud and Music Festival',
     src: 'https://youtube.com/shorts/iZ82pN3I_Ck?si=pARPhrf7vZTlW0Ei'
   },
+
   {
     id: '02',
     title: 'Modern  Architecture',
     src: 'https://youtube.com/shorts/N4KRhfEAdak?si=eBWYpFCJ0YFq8Igv'
+  },  
+  
+  {
+    id: '03',
+    title: 'Architecture',
+    src: 'https://youtube.com/shorts/T4ZGWnbbmOI'
   }
+
 
   
 ];
