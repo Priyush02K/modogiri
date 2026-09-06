@@ -20,6 +20,8 @@ import {
 } from 'lucide-react';
 
 
+import Profile from "../assets/Profile.webp";
+import Footer from "../components/Footer";
 
 
 
@@ -56,7 +58,7 @@ const STUDIO_GALLERY = [
     span: 'md:col-span-1 md:row-span-1'
   },
   { 
-    url: 'https://images.unsplash.com/photo-1581291417004-6e7398463c68?q=80&w=2070', 
+    url: 'https://images.squarespace-cdn.com/content/v1/65c25f904928ac21cf7d6d02/9c8b19fb-00ee-4a28-b0fb-34462dd5065e/Toward+Front+Door.jpg', 
     label: 'Drafting Studio',
     span: 'md:col-span-1 md:row-span-2'
   },
@@ -67,23 +69,23 @@ const STUDIO_GALLERY = [
   }
 ];
 
-const TEAM = [
-  {
-    name: 'Ar. ABC XYZ',
-    role: 'Principal Architect & Founder',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&fit=crop'
-  },
-  {
-    name: 'Elena Rostova',
-    role: 'Head of Interior Research',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&fit=crop'
-  },
-  {
-    name: 'Marcus Chen',
-    role: 'Lead Structural Engineer',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&fit=crop'
-  }
-];
+// const TEAM = [
+//   {
+//     name: 'Ar. ABC XYZ',
+//     role: 'Principal Architect & Founder',
+//     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&fit=crop'
+//   },
+//   {
+//     name: 'Elena Rostova',
+//     role: 'Head of Interior Research',
+//     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&fit=crop'
+//   },
+//   {
+//     name: 'Marcus Chen',
+//     role: 'Lead Structural Engineer',
+//     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&fit=crop'
+//   }
+// ];
 
 const STATS = [
   { value: '15+', label: 'Years of Practice' },
@@ -123,12 +125,13 @@ export function AboutPage() {
                   <p className="text-[10px] uppercase tracking-[0.5em] font-black text-orange-500">Design Studio</p>
                 </div>
                 
-                <h1 className="text-6xl md:text-8xl lg:text-[9rem] font-serif leading-[0.85] tracking-tighter mb-8 text-white">
-                  MADO<span className="italic text-stone-400 font-light">GIRI.</span>
+                <h1 className="text-3xl md:text-5xl lg:text-[5rem] font-serif leading-[0.85] tracking-tighter mb-8 text-white">
+                  STUDIO<span className="italic text-stone-400 font-light">MADOGIRI.</span>
                 </h1>
                 
                 <p className="text-2xl md:text-3xl font-serif text-stone-300 leading-tight max-w-2xl italic font-light">
-                  "Architecture is the silent conversation between the earth's weight and the sky's light."
+                 ‘Earth turns to gold in the hands of the wise.’ -RUMI
+
                 </p>
               </motion.div>
             </div>
@@ -141,8 +144,8 @@ export function AboutPage() {
                 className="text-left lg:text-right border-l-2 lg:border-l-0 lg:border-r-2 border-orange-600 pl-4 lg:pl-0 lg:pr-4"
               >
                 <p className="text-[10px] uppercase tracking-widest font-black text-stone-400 mb-1">Principal & Founder</p>
-                <p className="text-lg font-serif text-white">Ar. Vikram Sharma</p>
-                <p className="text-xs font-mono text-orange-500 mt-2">B.Arch // Vernacular Researcher</p>
+                <p className="text-lg font-serif text-white">AR STUTI PANWAR</p>
+                <p className="text-xs font-mono text-orange-500 mt-2">B.ARCH / MDES / VERNACULAR RESEARCHER / INFOVORE</p>
               </motion.div>
             </div>
           </div>
@@ -182,15 +185,15 @@ export function AboutPage() {
               className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-stone-200 dark:border-stone-800 bg-stone-200 dark:bg-stone-900"
             >
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&fit=crop" 
-                alt="Founder - Ar. Vikram Sharma" 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                src={Profile} 
+                alt="Founder - AR STUTI PANWAR" 
+                className="w-full h-full object-cover   transition-all duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 text-white">
                 <p className="text-[9px] uppercase tracking-[0.4em] font-black text-orange-500 mb-1">Founder's Journey</p>
-                <p className="text-xl font-serif">Ar. Vikram Sharma</p>
-                <p className="text-[11px] text-stone-300 font-mono">M.Des (Florence) // Natural Builder</p>
+                <p className="text-xl font-serif">AR STUTI PANWAR</p>
+                <p className="text-[11px] text-stone-300 font-mono">B.ARCH / MDES / VERNACULAR RESEARCHER / INFOVORE </p>
               </div>
             </motion.div>
           </div>
@@ -209,14 +212,13 @@ export function AboutPage() {
 
             <div className="space-y-5 text-stone-600 dark:text-stone-300 text-base md:text-lg leading-relaxed">
               <p>
-                Ever since I graduated as an architect I felt a little incomplete about the profession . I further went on for a masters degree in product design from Florence,Italy. It was only after my travels around rural India and Europe, when I started digging about earthen/vernacular architecture which gave me a detailed direction. I have been working/researching on creating ways to build more hybrid structures which can amalgamate the vernacular Knowledge and the modern discoveries of materials.
+              Though I graduated as an architect, a lingering sense of incompleteness led me to pursue a Master’s in Product Design in Florence, Italy. Yet, it wasn’t until I left the classroom and immersed myself in the rural landscapes of India and Europe that I  found my true north : vernacular and earthen architecture.
               </p>
               <p>
-                I participated in various workshops and internship programs to hone my hands-on skill in natural building.
+               Since 2021, I have traded the drafting table for the construction site, actively building with various natural techniques to hone my hands-on craft. Today, my work sits at the intersection of past and future. 
               </p>
               <p>
-                I have built with various techniques of natural construction since the year 2020.
-              </p>
+               Alongside a dedicated team of natural builders, rural communities, I research and design hybrid structures and products that amalgamate time-tested vernacular wisdom with modern material discoveries. Our ultimate goal? To craft beautiful, grounded earthen spaces that don't just shelter, but deeply enhance the human experience.              </p>
               <p className="font-serif italic text-lg md:text-xl text-stone-900 dark:text-white border-l-2 border-orange-600 pl-6 my-4">
                 "We now with a team of natural builders aim to build beautiful hybrid earthen spaces that can enhance an overall experience ."
               </p>
@@ -243,7 +245,7 @@ export function AboutPage() {
             
             <div className="lg:col-span-8 border-l-2 border-stone-300 dark:border-stone-800 pl-6 lg:pl-12">
               <p className="text-xl md:text-2xl font-serif text-stone-800 dark:text-stone-200 leading-relaxed italic font-light">
-                <strong className="font-semibold not-italic text-stone-900 dark:text-white">MADOGIRI</strong> is a design studio with a dual focus: creating innovative products and thoughtful buildings. We believe that great design is a solution—a way to harmonize our needs with the natural world. Our work is a constant exploration of how we can live better, smarter, and more gently on the earth.
+                <strong className="font-semibold not-italic text-stone-900 dark:text-white">STUDIOMADOGIRI</strong> is a design studio with a dual focus: creating innovative products and thoughtful buildings. We believe that great design is a solution—a way to harmonize our needs with the natural world. Our work is a constant exploration of how we can live better, smarter, and more gently on the earth.
               </p>
             </div>
           </div>
@@ -371,7 +373,7 @@ export function AboutPage() {
 
       {}
       {/* --- THE COLLECTIVE / TEAM --- */}
-      <section className="py-28 px-6 md:px-12 max-w-[1500px] mx-auto">
+      {/* <section className="py-28 px-6 md:px-12 max-w-[1500px] mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -403,26 +405,13 @@ export function AboutPage() {
             </motion.div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {}
       {/* --- FOOTER CTA --- */}
-      <footer className="py-24 px-6 md:px-12 bg-stone-950 text-white border-t border-stone-800">
-        <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-          <div>
-            <h2 className="text-3xl font-serif font-bold text-white tracking-tight">
-              MADOGIRI<span className="text-orange-600 italic">.</span>
-            </h2>
-            <p className="text-xs text-stone-400 mt-2">Architecture & Product Studio harmonizing human needs with the natural world.</p>
-          </div>
-          <div className="flex items-center gap-6 text-[10px] uppercase tracking-widest font-mono text-stone-500">
-            <span>© {new Date().getFullYear()} MADOGIRI Design Studio</span>
-            <span className="w-1 h-1 bg-orange-600 rounded-full"></span>
-            <span>All Rights Reserved</span>
-          </div>
-        </div>
-      </footer>
 
+
+      <Footer/>
     </div>
   );
 }

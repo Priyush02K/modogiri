@@ -93,13 +93,22 @@ const PROJECTS = [
   },
   {
     id: 'ARC-04',
-    title: 'Public Bottle Toilet',
+    title: 'Public  Toilet',
     category: '01.ARCHITECTURE',
     location: 'High-Altitude Trails',
     image: PublicBottleToilet01,
-    desc: 'Reimagining waste plastic bottles as structural mountain bricks.',
-    details: 'Proposes toilets in remote regions affected by plastic waste. Reimagines bottles as bricks, involving local communities to foster sustainability and ownership.',
-    gallery: [
+    desc: 'Building sustainable toilets from discarded bottles, with local communities at the heart of the process.',
+    details: (
+  <>
+    This proposal explores using discarded bottles as building blocks for toilets in remote mountain regions affected by tourism and bottle waste.
+    <br /><br />
+
+    The project aims to educate and involve local communities in bottle construction, encouraging them to collect materials and help build sustainable sanitation spaces.
+    <br /><br />
+
+    Community involvement creates a stronger sense of ownership and responsibility, helping ensure the structures are maintained and used effectively.
+  </>
+),    gallery: [
       PublicBottleToilet01,
       PublicBottleToilet02,
       PublicBottleToilet03
@@ -182,9 +191,17 @@ const PROJECTS = [
     category: '03.MUD & MUSIC FESTIVAL',
     location: 'Uttarakhand',
     image: Mud,
-    desc: 'A festival celebrating the traditional music, culture, and architecture of Uttarakhand.',
-    details: 'Mud and Music is a festival celebrating Uttarakhand’s traditional music, culture, and architecture. Bringing together local and international artists, the festival creates a platform to preserve Garhwal’s rich heritage through live performances, storytelling, music, crafts, and documentation.',
-    gallery: [
+    desc: 'A festival celebrating the traditional music, culture, and architecture of India.',
+  details: (
+    <>
+      Mud and Music Festival is a celebration of Earth, traditional music, and creative expression.
+      <br /><br />
+      The festival brings together earthen art, mud architecture, handmade instruments, folk traditions, and indigenous rhythms from around the world.
+      <br /><br />
+      The vision came to life through our 2025 pilot project in Tehri Garhwal, Uttarakhand.
+    </>
+
+),    gallery: [
       Mud,
       CulturalInitiative01,
       CulturalInitiative02,
