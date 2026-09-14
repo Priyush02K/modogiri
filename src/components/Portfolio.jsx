@@ -23,26 +23,28 @@ import MudTub01 from "../assets/portfolioimg/TheMudTub01.jpg";
 import MudTub02 from "../assets/portfolioimg/TheMudTub02.jpg";
 import MudTub03 from "../assets/portfolioimg/TheMudTub03.jpg";
 
-import BuildingWithEarthbags01 from "../assets/portfolioimg/BuildingWithEarthbags01.jpg";
+
+import BuildingWithEarthbags01 from "../assets/portfolioimg/BuildingWithEarthbags01.webp";
 import BuildingWithEarthbags02 from "../assets/portfolioimg/BuildingWithEarthbags02.jpg";
 import BuildingWithEarthbags03 from "../assets/portfolioimg/BuildingWithEarthbags03.jpg";
-
 
 import PublicBottleToilet01 from "../assets/portfolioimg/PublicBottleToilet01.jpg";
 import PublicBottleToilet02 from "../assets/portfolioimg/PublicBottleToilet02.jpg";
 import PublicBottleToilet03 from "../assets/portfolioimg/PublicBottleToilet03.jpg";
+import PublicBottleToilet04 from "../assets/portfolioimg/PublicBottleToilet04.jpg";
 
 
-import TheCourtyardHouse01 from "../assets/portfolioimg/TheCourtyardHouse01.jpg";
+ import TheCourtyardHouse01 from "../assets/portfolioimg/TheCourtyardHouse01.jpg";
 
-import MediterraneanHotel01 from "../assets/portfolioimg/MediterraneanHotel01.jpg";
+import MediterraneanHotel01 from "../assets/portfolioimg/MediterraneanHotel01.png";
 import MediterraneanHotel02 from "../assets/portfolioimg/MediterraneanHotel02.jpg";
 import MediterraneanHotel03 from "../assets/portfolioimg/MediterraneanHotel03.jpg";
 
 
-import ForestHostelUnit01 from "../assets/portfolioimg/ForestHostelUnit01.jpg";
-import ForestHostelUnit02 from "../assets/portfolioimg/ForestHostelUnit02.jpg";
-import ForestHostelUnit03 from "../assets/portfolioimg/ForestHostelUnit03.jpg";
+ import ForestHostelUnit01 from "../assets/portfolioimg/ForestHostelUnit01.jpg";
+ import ForestHostelUnit02 from "../assets/portfolioimg/ForestHostelUnit02.jpg";
+ import ForestHostelUnit03 from "../assets/portfolioimg/ForestHostelUnit03.jpg";
+ import ForestHostelUnit04 from "../assets/portfolioimg/ForestHostelUnit04.jpg";
 
 
 import Gourmetchocolatebox from "../assets/Gourmetchocolatebox.webp";
@@ -111,9 +113,12 @@ const PROJECTS = [
 ),    gallery: [
       PublicBottleToilet01,
       PublicBottleToilet02,
-      PublicBottleToilet03
+      PublicBottleToilet03,
+      PublicBottleToilet04
     ]
   },
+
+
   {
     id: 'ARC-05',
     title: 'The Courtyard House',
@@ -124,11 +129,14 @@ const PROJECTS = [
     details: 'Incorporates traditional Pataal stone slate roofing to balance contemporary living with cultural heritage for a family of five.',
     gallery: [
      
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070',
-      'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=2070',
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2070'
+      TheCourtyardHouse01,
+      // 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=2070',
+      // 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2070'
     ]
   },
+
+
+
   {
     id: 'ARC-06',
     title: 'Mediterranean Hotel',
@@ -143,6 +151,8 @@ const PROJECTS = [
       MediterraneanHotel03
     ]
   },
+
+
   {
     id: 'ARC-07',
     title: 'Forest Hostel Unit',
@@ -154,9 +164,12 @@ const PROJECTS = [
     gallery: [
       ForestHostelUnit01,
       ForestHostelUnit02,
-      ForestHostelUnit03
+      ForestHostelUnit03,
+      ForestHostelUnit04
     ]
   },
+
+
   {
     id: 'PROD-01',
     title: 'Gourmet Chocolate Box',
@@ -171,6 +184,7 @@ const PROJECTS = [
       GourmetChocolateBox03
     ]
   },
+
   {
     id: 'PROD-02',
     title: 'Poki the Robo',
@@ -185,6 +199,8 @@ const PROJECTS = [
        PokiRobo03
     ]
   },
+
+
   {
     id: 'FEST-01',
     title: 'Cultural Preservation Initiative',

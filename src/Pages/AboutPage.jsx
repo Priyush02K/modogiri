@@ -122,11 +122,11 @@ export function AboutPage() {
               >
                 <div className="flex items-center gap-4 mb-6">
                   <span className="w-12 h-[2px] bg-orange-600"></span>
-                  <p className="text-[10px] uppercase tracking-[0.5em] font-black text-orange-500">Design Studio</p>
+                  <p className="text-[20px] uppercase tracking-[0.5em] font-black text-orange-500"> Studio</p>
                 </div>
                 
                 <h1 className="text-3xl md:text-5xl lg:text-[5rem] font-serif leading-[0.85] tracking-tighter mb-8 text-white">
-                  STUDIO<span className="italic text-stone-400 font-light">MADOGIRI.</span>
+                  <span className="italic text-stone-400 font-light">MADOGIRI.</span>
                 </h1>
                 
                 <p className="text-2xl md:text-3xl font-serif text-stone-300 leading-tight max-w-2xl italic font-light">
