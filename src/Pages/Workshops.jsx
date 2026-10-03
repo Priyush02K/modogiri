@@ -39,6 +39,7 @@ import Plasters from "../assets/NaturalPlastersWorkshop.webp";
 import Sensory from "../assets/SensoryWorkshop.webp";
 import LearnDemo from "../assets/LearningBuildConnectingDomes.webp";
 import MovementSli from "../assets/MovementStillness.webp";
+import Skillstudio from "../assets/Skillstudio.jpg"
 
 // Secret studio passkey for creator & deletion authorization
 const STUDIO_SECRET_KEY = "STUDIO_ARC_2026";
@@ -549,7 +550,7 @@ const Workshops = () => {
             initial={{ scale: 1.15 }}
             animate={{ scale: 1 }}
             transition={{ duration: 25, ease: "linear" }}
-            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2071&auto=format&fit=crop"
+            src={Skillstudio}
             className="w-full h-full object-cover grayscale-[20%]"
             alt="Laboratory Cover"
           />
@@ -577,7 +578,7 @@ const Workshops = () => {
               </h1>
 
               <p className="text-xl md:text-3xl font-serif text-stone-300 leading-tight max-w-2xl italic border-l border-white/20 pl-8">
-                "A unified approach to hands-on architectural education and material research."
+                "A unified approach to hands-on learning and material research."
               </p>
             </motion.div>
 

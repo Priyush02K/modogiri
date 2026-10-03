@@ -30,6 +30,7 @@ import {
   MapPin 
 } from 'lucide-react';
 import Footer from "../components/Footer";
+import Questions from "../assets/Questions.jpg"
 
 
 // ==========================================
@@ -145,7 +146,7 @@ const Consultation = () => {
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 15, ease: "linear" }}
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2070&auto=format&fit=crop" 
+            src={Questions}
             className="w-full h-full object-cover grayscale-[40%]" 
             alt="Consultation Cover"
           />
@@ -163,7 +164,7 @@ const Consultation = () => {
               Studio <br/> <span className="italic text-stone-400 font-light">Questionnaire.</span>
             </h1>
             <p className="text-xl md:text-2xl font-serif text-stone-300 italic max-w-xl">
-              "Providing the technical parameters to transform abstract vision into architectural reality."
+              "Build small, give the planet space to breathe."
             </p>
           </motion.div>
         </div>

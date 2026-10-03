@@ -153,7 +153,7 @@ export function AboutPage() {
       </header>
 
       {/* --- STATS BAR --- */}
-      <section className="bg-stone-900 text-stone-200 py-12 px-6 md:px-12 border-b border-stone-800">
+      {/* <section className="bg-stone-900 text-stone-200 py-12 px-6 md:px-12 border-b border-stone-800">
         <div className="max-w-[1500px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
           {STATS.map((stat, i) => (
             <motion.div 
@@ -169,7 +169,7 @@ export function AboutPage() {
             </motion.div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* --- FOUNDER SECTION (COMPACT IMAGE SIZE) --- */}
       <section className="py-24 px-6 md:px-12 max-w-[1500px] mx-auto border-b border-stone-200 dark:border-stone-800">

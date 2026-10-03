@@ -31,10 +31,10 @@ const Footer = () => {
               </span>
             </div>
 
-            <h2 className="text-5xl sm:text-7xl md:text-[6rem] font-serif text-black dark:text-white leading-[0.9] tracking-tight">
-              Let's build <br />
+            <h2 className="text-5l sm:text-7l md:text-[3rem] font-serif text-black dark:text-white leading-[0.9] tracking-tight">
+              Designing better ways<br /> <br />
               <span className="italic text-gray-400 dark:text-gray-500 font-light">
-                your legacy.
+                to learn, live, and create.
               </span>
             </h2>
           </div>
@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
 
             <p className="text-sm text-gray-500 dark:text-gray-400 font-medium leading-relaxed max-w-xs">
-              A sustainable architecture and design practice focused on merging brutalist forms with organic materials.
+              "At our core, we are system thinkers. We see the connection between where we learn, where we live, and what we use. Our mission is to harmonize these elements through alternative education, sustainable buildings, and products that respect the planet."
             </p>
 
           </div>
@@ -101,21 +101,48 @@ const Footer = () => {
             <h4 className="text-[10px] uppercase tracking-[0.3em] font-bold text-black dark:text-white mb-2">
               Locations
             </h4>
+            <h3>(Our IN-HOUSE Studio)</h3>
 
             <div className="mb-4">
 
               <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-1 text-black dark:text-white">
-                Madogiri Studio
+               Studio Madogiri
               </p>
 
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                Below libert manor<br />
+               Below Ilbert Manor<br />
                 Durggal Villa,
               </p>
 
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 Library Mussooorie,<br />
-                Uttarakhand Pin 248179
+                Uttarakhand India.<br />
+                Pin 248179
+              </p>
+
+            </div>
+
+            {/* //other location */}
+
+             <h4 className="text-[10px] uppercase tracking-[0.3em] font-bold text-black dark:text-white mb-2">
+              Locations
+            </h4>
+            <h3>(Our Skill-Exchange studio)</h3>
+
+            <div className="mb-4">
+
+              <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-1 text-black dark:text-white">
+               Studio Madogiri
+              </p>
+
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+               Village Kaflog,<br />
+               Tehri Garhwal,
+              </p>
+
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                Uttarakhand India.<br></br>
+                Pin 249131 
               </p>
 
             </div>

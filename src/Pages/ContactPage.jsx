@@ -194,7 +194,7 @@ const ContactPage = () => {
         </div>
       </section>
 
-      {/* --- SECTION 3: GLOBAL FOOTPRINT --- */}
+      {/* --- SECTION 3: GLOBAL FOOTPRINT ---
       <section className="py-40 px-6 md:px-12 bg-white dark:bg-stone-900/10">
         <div className="max-w-[1400px] mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-12">
@@ -247,7 +247,7 @@ const ContactPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* --- SECTION 4: SOCIAL DIRECTORY --- */}
       <section className="py-32 border-t border-stone-200 dark:border-stone-800">
